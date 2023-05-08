@@ -1,0 +1,26 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "apps:Create",
+        "apps:Update",
+        "apps:Delete",
+        "apps:Get",
+        "apps:List"
+      ],
+      "Resource": [
+        "arn:aws:iam::526841061839:user/amit",
+        "arn:aws:iam::526841061839:user/amit",
+        "arn:aws:iam::123456789012:role/KubernetesAdminRole",
+        "arn:aws:eks:us-east-1:526841061839:cluster/<cluster-name>/apps/v1/deployments",
+        "arn:aws:eks:us-east-1:526841061839:cluster/<cluster-name>/apps/v1/deployments/*",
+        "arn:aws:eks:us-east-1:526841061839:cluster/<cluster-name>/apps/v1/replicasets",
+        "arn:aws:eks:us-east-1:526841061839:cluster/<cluster-name>/apps/v1/replicasets/*"
+      ]
+    }
+  ]
+}
+
+  
